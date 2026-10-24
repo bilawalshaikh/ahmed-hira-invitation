@@ -1,0 +1,243 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>AHMED &amp; HIRA | Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap">
+<style>
+:root{--cream:#f7efe1;--paper:#fbf6ec;--gold:#b98a4b;--wine:#7d1f1f;--rose:#a8483f;--ink:#5a3a2e}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;background:#2b2018}
+body{font-family:'Cormorant Garamond',serif;color:var(--ink);display:flex;justify-content:center}
+.script{font-family:'Great Vibes',cursive;font-weight:400}
+#app{position:relative;width:100%;max-width:430px;height:100%;background:var(--paper);overflow:hidden}
+
+/* envelope */
+#env{position:absolute;inset:0;z-index:30;background:linear-gradient(160deg,#f4e7cf,#ead8b6);display:flex;align-items:center;justify-content:center;transition:opacity 1.2s ease .6s,visibility 0s 1.8s}
+#env.open{opacity:0;visibility:hidden}
+.pocket{position:absolute;inset:0;background:
+ linear-gradient(to bottom right,transparent 49.6%,rgba(185,138,75,.35) 50%,transparent 50.4%) 0 0/100% 100%,
+ linear-gradient(to bottom left,transparent 49.6%,rgba(185,138,75,.35) 50%,transparent 50.4%) 0 0/100% 100%;opacity:.8}
+.flap{position:absolute;left:0;right:0;top:0;height:55%;background:linear-gradient(#f1e0c1,#e6d1aa);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform 1s ease;filter:drop-shadow(0 6px 8px rgba(90,58,46,.25))}
+#env.open .flap{transform:rotateX(180deg)}
+.glow{position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,#fff6d0 0,rgba(255,236,170,.0) 60%);opacity:0;transition:opacity .8s}
+#env.open .glow{opacity:1}
+.seal{position:absolute;top:calc(55% - 46px);left:50%;width:92px;height:92px;margin-left:-46px;border:0;border-radius:50%;cursor:pointer;z-index:3;
+ background:radial-gradient(circle at 35% 30%,#b53a35,#7d1f1f 60%,#5d1414);box-shadow:0 6px 14px rgba(60,10,10,.45),inset 0 0 0 5px rgba(0,0,0,.08);color:#f0cfa0;font:600 30px 'Great Vibes',cursive;transition:transform .4s,opacity .4s;animation:pulse 2s infinite}
+#env.open .seal{transform:scale(.4);opacity:0;animation:none}
+@keyframes pulse{50%{box-shadow:0 6px 14px rgba(60,10,10,.45),0 0 0 14px rgba(125,31,31,.12)}}
+.tap{position:absolute;top:calc(55% + 62px);width:100%;text-align:center;letter-spacing:.3em;font-size:12px;text-transform:uppercase;color:var(--gold);transition:opacity .3s}
+#env.open .tap{opacity:0}
+.mono{position:absolute;top:10%;width:100%;text-align:center;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:22px;letter-spacing:.22em;color:var(--gold);text-transform:uppercase}
+.mono small{display:block;font:400 12px 'Cormorant Garamond';letter-spacing:.35em;text-transform:uppercase;margin-top:4px;color:var(--ink)}
+
+/* scroll area */
+#scroll{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;scroll-behavior:smooth}
+section{position:relative;min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 28px}
+.rv{opacity:0;transform:translateY(28px);transition:opacity 1s,transform 1s}
+.rv.in{opacity:1;transform:none}
+
+/* hero */
+.hero{padding:0;background:linear-gradient(#efe0c4,#f6ead2 40%,#e9d8b4)}
+.arch{position:absolute;inset:26px 22px 26px;border-radius:999px 999px 18px 18px;overflow:hidden;border:2px solid rgba(185,138,75,.55);
+ background:linear-gradient(#f8ecd0 0,#efd9ae 38%,#c9b48a 62%,#6f7e6a 63%,#8fa08a 80%,#5f6f5c 100%)}
+.arch svg{position:absolute;inset:0;width:100%;height:100%}
+.hero .txt{position:relative;z-index:2;margin-top:-40px;color:#5a2a22;text-shadow:0 1px 8px rgba(255,246,222,.9)}
+.hero .gm{font-size:19px;letter-spacing:.12em;font-style:italic}
+.hero .names{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:46px;letter-spacing:.16em;line-height:1.05;color:var(--wine);margin:8px 0;text-transform:uppercase}
+.hero .amp{font-family:'Cormorant Garamond',serif;font-size:28px;letter-spacing:.2em;display:block;color:var(--gold);margin:4px 0}
+.caps{font-family:'Cormorant Garamond',serif;font-weight:600;letter-spacing:.18em;text-transform:uppercase}
+.hint{position:absolute;bottom:50px;z-index:3;width:100%;left:0;text-align:center;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#fff7e3;animation:bob 2s infinite}
+@keyframes bob{50%{transform:translateY(7px)}}
+
+.divider{display:flex;align-items:center;gap:10px;color:var(--rose);margin:18px 0;font-size:14px}
+.divider::before,.divider::after{content:"";width:70px;height:1px;background:var(--gold)}
+h2{font-family:'Great Vibes';font-weight:400;font-size:44px;color:var(--wine);margin-bottom:6px}
+p{font-size:21px;line-height:1.55;font-style:italic}
+.msg{background:var(--paper)}
+
+/* scratch */
+.scr{background:linear-gradient(#fbf6ec,#f3e6d0)}
+.card{position:relative;width:290px;height:262px;margin-top:20px}
+.card svg.h{position:absolute;inset:0;width:100%;height:100%}
+.date{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:22px}
+.date em{font-size:15px;letter-spacing:.2em;text-transform:uppercase}
+.date b{font-family:'Great Vibes';font-weight:400;font-size:46px;color:var(--wine);line-height:1.1}
+.date span{font-size:20px}
+canvas{position:absolute;inset:0;touch-action:none;transition:opacity 1s;cursor:grab}
+canvas.done{opacity:0;pointer-events:none}
+.btn{margin-top:22px;border:0;padding:13px 26px;border-radius:30px;background:linear-gradient(#a8483f,#7d1f1f);color:#f8e3bd;font:600 15px 'Cormorant Garamond';letter-spacing:.2em;text-transform:uppercase;cursor:pointer;text-decoration:none;box-shadow:0 6px 14px rgba(90,20,20,.3);display:inline-block}
+.btn[hidden]{display:none}
+
+/* countdown */
+.cd{background:var(--cream)}
+.boxes{display:flex;gap:10px;margin-top:20px}
+.box{width:72px;padding:14px 0;background:var(--paper);border:1px solid rgba(185,138,75,.5);border-radius:10px}
+.box b{display:block;font-size:34px;color:var(--wine);font-weight:600}
+.box span{font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+
+/* venue */
+.venue{background:var(--paper)}
+.pin{font-size:34px;color:var(--rose)}
+.venue .v{font-family:'Great Vibes';font-size:46px;color:var(--wine);margin:6px 0 4px}
+.foot{margin-top:46px;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:22px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}
+.foot small{display:block;font:italic 17px 'Cormorant Garamond';letter-spacing:.04em;text-transform:none;color:var(--ink)}
+
+#petals{position:absolute;inset:0;z-index:20;pointer-events:none;overflow:hidden}
+.pt{position:absolute;top:-30px;width:11px;height:15px;background:radial-gradient(circle at 30% 30%,#c0524a,#7d1f1f);border-radius:70% 0 70% 0;opacity:.85;animation:fall linear forwards}
+@keyframes fall{to{transform:translate(var(--dx),110vh) rotate(var(--r))}}
+@media (prefers-reduced-motion:reduce){.pt,.seal,.hint{animation:none}}
+</style>
+
+<div id="app">
+  <div id="petals"></div>
+
+  <div id="env">
+    <div class="glow"></div>
+    <div class="pocket"></div>
+    <div class="mono">AHMED &amp; HIRA<small>Wedding Invitation</small></div>
+    <div class="flap"></div>
+    <button class="seal" id="seal" aria-label="Open invitation">A&amp;H</button>
+    <div class="tap">Tap to open</div>
+  </div>
+
+  <div id="scroll">
+    <section class="hero">
+      <div class="arch">
+        <svg viewBox="0 0 400 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs><radialGradient id="sun" cx="50%" cy="45%" r="50%"><stop offset="0" stop-color="#fff8dc" stop-opacity=".9"/><stop offset="1" stop-color="#fff8dc" stop-opacity="0"/></radialGradient></defs>
+          <rect width="400" height="700" fill="url(#sun)"/>
+          <path d="M0 440 L90 360 L160 420 L240 330 L330 410 L400 370 V470 H0Z" fill="#a9a98c" opacity=".55"/>
+          <path d="M0 460 L120 400 L210 450 L320 395 L400 440 V480 H0Z" fill="#8d9a80" opacity=".7"/>
+          <g fill="none" stroke="#fff" stroke-opacity=".45"><path d="M40 560q40-8 80 0M270 600q50-8 90 0M120 640q60-8 120 0"/></g>
+          <g id="flw" opacity=".95">
+            <g fill="#8d9a6b"><circle cx="30" cy="150" r="9"/><circle cx="50" cy="210" r="8"/><circle cx="26" cy="280" r="9"/><circle cx="370" cy="160" r="9"/><circle cx="352" cy="230" r="8"/><circle cx="378" cy="300" r="9"/></g>
+            <g fill="#f5e3d3"><circle cx="40" cy="520" r="30"/><circle cx="80" cy="560" r="26"/><circle cx="20" cy="580" r="24"/><circle cx="360" cy="520" r="30"/><circle cx="320" cy="565" r="26"/><circle cx="385" cy="585" r="24"/></g>
+            <g fill="#c0524a"><circle cx="48" cy="515" r="12"/><circle cx="352" cy="515" r="12"/><circle cx="82" cy="560" r="9"/><circle cx="318" cy="562" r="9"/></g>
+            <g fill="#6c7f55"><ellipse cx="25" cy="500" rx="22" ry="8" transform="rotate(-30 25 500)"/><ellipse cx="375" cy="500" rx="22" ry="8" transform="rotate(30 375 500)"/></g>
+          </g>
+          <!-- swans forming a heart -->
+          <g transform="translate(200 600)" stroke="#fffaf0" stroke-width="9" fill="none" stroke-linecap="round">
+            <path d="M-8 20 C-50 -10 -64 -60 -30 -78 C-12 -86 -4 -68 -2 -56 C0 -68 12 -86 30 -78 C64 -60 50 -10 8 20" stroke-width="7"/>
+            <path d="M-92 40 C-64 18 -34 18 -8 24 C-24 40 -64 50 -92 40Z" fill="#fffaf0" stroke="none"/>
+            <path d="M92 40 C64 18 34 18 8 24 C24 40 64 50 92 40Z" fill="#fffaf0" stroke="none"/>
+            <path d="M-16 -76 l-12 6 l13 3" stroke="#d99a4a" stroke-width="4"/>
+            <path d="M16 -76 l12 6 l-13 3" stroke="#d99a4a" stroke-width="4"/>
+          </g>
+        </svg>
+      </div>
+      <div class="txt rv">
+        <div class="gm">We're getting married</div>
+        <div class="divider">&#10084;</div>
+        <div class="names">AHMED<span class="amp">&amp;</span>HIRA</div>
+      </div>
+      <div class="hint">Scroll &#8595;</div>
+    </section>
+
+    <section class="msg">
+      <div class="rv">
+        <h2>With love &amp; joy</h2>
+        <div class="divider">&#10084;</div>
+        <p>We are honoured to invite you to the wedding of<br><b class="caps">AHMED &amp; HIRA</b>.<br>As we begin our journey together in faith and love, we would be grateful for your presence and prayers on this blessed occasion.</p>
+      </div>
+    </section>
+
+    <section class="scr">
+      <div class="rv" style="display:flex;flex-direction:column;align-items:center">
+        <h2>Scratch to reveal</h2>
+        <p style="font-size:18px">The day we have been waiting for</p>
+        <div class="card" id="card">
+          <svg class="h" viewBox="0 0 290 262" aria-hidden="true"><path id="hp" d="M145 248 C20 160 8 80 55 40 C92 10 130 30 145 68 C160 30 198 10 235 40 C282 80 270 160 145 248Z" fill="#fffaf0" stroke="#b98a4b" stroke-width="2"/></svg>
+          <div class="date"><em>You're invited</em><b>28 November</b><span>Saturday, 2026</span></div>
+          <canvas id="cv" width="290" height="262"></canvas>
+        </div>
+        <a class="btn" id="save" hidden target="_blank" rel="noopener">Save the date</a>
+      </div>
+    </section>
+
+    <section class="cd">
+      <div class="rv">
+        <h2>Counting down to forever</h2>
+        <div class="boxes">
+          <div class="box"><b id="d">--</b><span>Days</span></div>
+          <div class="box"><b id="h">--</b><span>Hours</span></div>
+          <div class="box"><b id="m">--</b><span>Mins</span></div>
+          <div class="box"><b id="s">--</b><span>Secs</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="venue">
+      <div class="rv">
+        <div class="pin">&#9906;</div>
+        <h2>Venue</h2>
+        <div class="v">Rosabel Banquet</div>
+        <p style="font-size:20px">Block 17, F.B. Area,<br>Karachi</p>
+        <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Rosabel+Banquet+Block+17+F.B.+Area+Karachi">Open in Maps</a>
+        <div class="foot">AHMED &amp; HIRA<small>We can't wait to celebrate with you</small></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const app=$('app'),scroller=$('scroll');
+
+/* petals */
+function petal(){
+  const p=document.createElement('i');p.className='pt';
+  p.style.left=Math.random()*100+'%';
+  p.style.setProperty('--dx',(Math.random()*120-60)+'px');
+  p.style.setProperty('--r',(Math.random()*720-360)+'deg');
+  p.style.animationDuration=(6+Math.random()*6)+'s';
+  p.style.transform='scale('+(.6+Math.random()*.8)+')';
+  $('petals').appendChild(p);setTimeout(()=>p.remove(),13000);
+}
+let pt;function startPetals(n){clearInterval(pt);let c=0;pt=setInterval(()=>{petal();if(++c>=n)clearInterval(pt)},350)}
+
+/* open envelope */
+$('seal').addEventListener('click',()=>{
+  $('env').classList.add('open');
+  setTimeout(()=>{startPetals(60);document.querySelectorAll('.hero .rv').forEach(e=>e.classList.add('in'))},900);
+});
+
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{root:scroller,threshold:.25});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+
+/* scratch heart */
+const cv=$('cv'),cx=cv.getContext('2d');
+const heart=new Path2D($('hp').getAttribute('d'));
+cx.save();cx.clip(heart);
+const g=cx.createLinearGradient(0,0,290,262);g.addColorStop(0,'#c46a55');g.addColorStop(.5,'#9b3a32');g.addColorStop(1,'#b8574a');
+cx.fillStyle=g;cx.fillRect(0,0,290,262);
+for(let i=0;i<260;i++){cx.fillStyle='rgba(255,235,200,'+Math.random()*.7+')';cx.fillRect(Math.random()*290,Math.random()*262,1.5,1.5)}
+cx.restore();
+cx.fillStyle='rgba(255,240,215,.9)';cx.font='34px "Great Vibes",cursive';cx.textAlign='center';cx.fillText('Scratch here',145,140);
+let down=false,revealed=false;
+const pos=e=>{const r=cv.getBoundingClientRect();return[(e.clientX-r.left)*cv.width/r.width,(e.clientY-r.top)*cv.height/r.height]};
+function scratch(e){if(!down||revealed)return;const[x,y]=pos(e);cx.globalCompositeOperation='destination-out';cx.beginPath();cx.arc(x,y,20,0,7);cx.fill();cx.globalCompositeOperation='source-over'}
+cv.addEventListener('pointerdown',e=>{down=true;cv.setPointerCapture(e.pointerId);scratch(e)});
+cv.addEventListener('pointermove',scratch);
+cv.addEventListener('pointerup',()=>{down=false;check()});
+function clearCount(){const d=cx.getImageData(0,0,290,262).data;let n=0,c=0;for(let i=3;i<d.length;i+=16){n++;if(d[i]<20)c++}return[n,c]}
+const [total,baseClear]=clearCount();
+function check(){
+  const[,clr]=clearCount();
+  // reveal once about half of the heart's scratchable area is cleared
+  if((clr-baseClear)/(total-baseClear)>.5&&!revealed){revealed=true;cv.classList.add('done');startPetals(40);
+    const s=$('save');s.hidden=false;
+    s.href='https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent('AHMED & HIRA Wedding')+'&dates=20261128/20261129&location='+encodeURIComponent('Rosabel Banquet, Block 17, F.B. Area, Karachi')}
+}
+
+/* countdown to 28 Nov 2026 */
+const target=new Date(2026,10,28,0,0,0).getTime();
+function tick(){
+  let t=Math.max(0,target-Date.now());
+  const d=Math.floor(t/864e5);t%=864e5;const h=Math.floor(t/36e5);t%=36e5;const m=Math.floor(t/6e4);const s=Math.floor(t%6e4/1e3);
+  $('d').textContent=d;$('h').textContent=String(h).padStart(2,'0');$('m').textContent=String(m).padStart(2,'0');$('s').textContent=String(s).padStart(2,'0');
+}
+tick();setInterval(tick,1000);
+</script>
+
+
+</body></html>
